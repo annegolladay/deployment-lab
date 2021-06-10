@@ -7,11 +7,11 @@ const port = process.env.PORT || 4005
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../index.html'))
 })
-app.get('/', function(req, res) {
+app.get('/styles', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.css'))
   })
-app.get('/images', function(req, res) {
-    res.sendFile(path.join(__dirname, './1akdbeach_img.jpg'))
+app.get('/pictures/:name', function(req, res) {
+    res.sendFile(path.join(__dirname, `../images/${req.params.name}`))
 })
 
 
