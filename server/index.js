@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.css'))
   })
 app.get('/images', function(req, res) {
-    res.sendFile(path.join(__dirname, '../1akdbeach_img.jpg'))
+    res.sendFile(path.join(__dirname, './1akdbeach_img.jpg'))
 })
 
 
