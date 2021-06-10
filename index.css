@@ -115,17 +115,32 @@ a {
     border: 1px solid black;
 }
 
-.bio-container .favorites-container {
+.bio-container p {
+    margin: 2% 2%;
+}
+
+.favorites-container .travel-container h2, h3 {
+    padding: 2% 2%;
+}
+
+.favorites-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.bio-container p {
-    margin: 2% 2%;
+.fave-container {
+    width: 25%;
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.favorites-container h2, h3 {
-    padding: 2% 2%;
+.favorites-wrapper .fave-container img {
+    width: 12em;
+    height: 30vh;
+    padding: 2%;
+    margin: 2%;
 }
